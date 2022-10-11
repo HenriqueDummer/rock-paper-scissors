@@ -24,12 +24,15 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 3px solid #3944bc;
+    border: 3px solid #52307c;
     border-radius: 10px;
+    
 }
 
 .main_container h1{
     padding: 20px 0;
+    font-size: 40px;
+    font-weight: 600;
 }
 
 .players{
@@ -44,13 +47,22 @@ main{
     align-items: center;
 }
 
+.players div h2{
+    font-weight: 500;
+}
+
 
 .players img{
     width: 80px;
+    padding-block: 20px;
 }
 
-.players p, span{
+.players p{
     font-size: 18px;
+}
+
+.players span {
+    font-size: 22px;
 }
 
 .choice_img img{
@@ -58,7 +70,7 @@ main{
 }
 
 .result {
-    padding: 20px 0;
+    padding-bottom: 20px;
 }
 
 .play{
@@ -77,7 +89,7 @@ main{
     border-radius: 8px;
     border: none;
     background-color: transparent;
-    border: 3px solid #3944bc;
+    border: 3px solid #52307c;
     transition: 0.3s ease;
 }
 
@@ -85,6 +97,95 @@ main{
     cursor: pointer;
     background-color: rgba(255,255,255, 0.2);
 
+}
+
+.result_msg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result_msg_container{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #18191a;
+    border: 3px solid #8953cc;
+    border-radius: 10px;
+    color: aliceblue;
+    box-shadow: 0 0 40px 20px #5c407e;
+}
+
+.result_msg_container h1{
+    padding-block: 10px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.result_msg_container h2{
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.result_msg_container img{
+    width: 200px;
+    margin-block: 30px;
+}
+
+.final_score{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.final_score div{
+    text-align: center;
+}
+
+.final_score div h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.final_score div span{
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.result_msg_container button{
+    margin-bottom: 30px;
+    width: 160px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #52307c;
+    border-radius: 8px;
+    font-size: 20px;
+    color: aliceblue;
+    transition: 0.1s ease;
+    font-weight: 500;
+}
+
+.result_msg_container button:hover{
+    cursor: pointer;
+    background-color: #52307c;
+    color: #18191a;
+}
+
+.blur{
+    filter: blur(4px);
+}
+
+.hide{
+    display: none;
 }
 
 .img{

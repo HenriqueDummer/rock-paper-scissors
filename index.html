@@ -8,7 +8,71 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    
+    <main>
+        <div class="main_container">
+            <h1>Rock Papper Scissors</h1>
+            <div class="players">
+                <div class="you">
+                    <h2>You</h2>
+                    <span>Score: <span id="your_score">0</span></span>
+                    <img src="images/man.svg" alt="">
+                    <p>Your choice:</p>
+                    <div class="choice_img">
+                        <img id="your_choice_img" src="https://www.pngmart.com/files/11/Interrogation-PNG-HD.png" alt="">
+                    </div>
+                </div>
+                <div class="computer">
+                    <h2>Computer</h2>
+                    <span>Score: <span id="computer_score">0</span></span>
+                    <img src="images/robo.svg" alt="">
+                    <p>Computer's choice:</p>
+                    <div class="choice_img">
+                        <img id="computer_choice_img" src="https://www.pngmart.com/files/11/Interrogation-PNG-HD.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="result">
+                <p id="result_p"></p>
+            </div>
+
+            <div class="play">
+                <h3>Choose</h2>
+                <div class="choices">
+                    <button class="choice" id="rock">
+                        <img class="img" src="images/rock.png" alt="rock">
+                    </button>
+
+                    <button class="choice" id="papper">
+                        <img class="img" src="images/papper.png" alt="papper">
+                    </button>
+
+                    <button class="choice" id="scissors">
+                        <img class="img" src="images/scissors.png" alt="scissors">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="result_msg hide">
+        <div class="result_msg_container">
+            <h1 id="winner"></h1>
+            <img id="winner_img" src="images/man.svg" alt="">
+            <h2>Final Score:</h2>
+            <div class="final_score">
+                <div>
+                    <h3>You</h3>
+                    <span id="y_final_score"></span>
+                </div>
+                <div>
+                    <h3>Computer</h3>
+                    <span id="c_final_score"></span>
+                </div>
+            </div>
+            <button id="play_again">Play Again</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
